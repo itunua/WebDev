@@ -55,7 +55,7 @@ header .headerTextContent {
 }
 
 h1 {
-	font-family: 'Inter', sans-serif;
+	font-family: 'Archivo';
 	font-style: normal;
 	font-weight: 900;
 	font-size: 62px;
@@ -78,8 +78,16 @@ h2
 	line-height: 38px;
 	color: var(#E44444);
 	padding-bottom: 40px;
-	margin-top: 0;
+	margin-top: 30px; /* makes padding at the top bigger */
 	
+}
+
+.red_font {
+	color:#E44444;
+}
+
+.white_font {
+	color:#EDEDED;
 }
 
 h3 {
@@ -114,13 +122,13 @@ p {
 /***************/
 .directionRow {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row; /* puts buttons in a row */
 	justify-content: center;
 }
 
 .directionColumn {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column; /* puts buttons in a column */
 	align-items: center;
 }
 
@@ -170,6 +178,10 @@ p {
 	text-decoration: none;
 }
 
+.button_width {
+	width: 30%;
+}
+
 .buttonDarkGreyColor {
 	color: var(#4B4B4B);
 	border-color: var(#4B4B4B);
@@ -192,6 +204,14 @@ p {
 .buttonHighlight:hover {
 	font-weight: 800;
 	border-width: 3px;
+}
+
+.button_colour {
+	color: #E44444;
+}
+
+.button_colour:hover {
+	color: #CD487B;
 }
 
 /* Style the button's default appearance */
