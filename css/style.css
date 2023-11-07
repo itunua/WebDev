@@ -82,10 +82,14 @@ h2
 	
 }
 
+
+
+/* I made this*/
 .red_font {
 	color:#E44444;
 }
 
+/* I made this*/
 .white_font {
 	color:#EDEDED;
 }
@@ -133,13 +137,19 @@ p {
 }
 
 .sectionLinearGradientBackground {
-	background: linear-gradient(to right, var(#E44444), var(#CD487B));
+	background: linear-gradient(to right, #E44444, #CD487B);
+	padding: 20px 0;
 }
 
-.whiteContentSection h2,
-.whiteContentSection h3,
-.whiteContentSection p {
-	color:  white;
+.redContentSection {
+	color: #E44444;
+}
+.whiteContentSection {
+	color: #EDEDED;
+}
+
+.whiteContentSections:h2 {
+	color: white;
 }
 
 .textCenter {
@@ -148,7 +158,7 @@ p {
 
 /***************/
 .sectionLightGreyBackground {
-	background-color: var(#EDEDED);
+	background-color: #EDEDED;
 	
 }
 
@@ -183,18 +193,18 @@ p {
 }
 
 .buttonDarkGreyColor {
-	color: var(#4B4B4B);
-	border-color: var(#4B4B4B);
+	color: #4B4B4B;
+	border-color: #4B4B4B;
 }
 
 .buttonMainColor {
-	color: var(#E44444);
-	border-color: var(#E44444);
+	color: #E44444;
+	border-color: #E44444;
 }
 
 .buttonSecondColor {
-	color: var(#CD487B);
-	border-color: var(#CD487B);
+	color: #CD487B;
+	border-color: #CD487B;
 }
 
 .buttonRounded {
@@ -204,6 +214,10 @@ p {
 .buttonHighlight:hover {
 	font-weight: 800;
 	border-width: 3px;
+	color: #CD487B;
+	border-color: #CD487B;
+	transform: scale(1.1) /* increase size when hovered over*/
+	
 }
 
 .button_colour {
@@ -220,12 +234,13 @@ p {
 	border-color: var(#4B4B4B);
   }
   
-  /* Style the button when hovered */
+  /* Style the button when hovered 
   .button.buttonDarkGreyColor:hover {
 	color: pink; 
 	background-color: var(#4B4B4B); 
   }
-  
+  */
+
 h2:contains("Founding Members") {
 	background-color: pink;
 	padding: 10px 0; 
@@ -248,4 +263,5 @@ h2:contains("Founding Members") {
   .white-text {
 	color: white;
   }
-  
+
+
